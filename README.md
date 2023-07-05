@@ -1,1 +1,1 @@
-A mobile application using react native framework using countries graphql & flash-list
+A mobile application using react native framework, countries graphql & flash-list
