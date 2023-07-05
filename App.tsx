@@ -19,6 +19,7 @@ import {
 import SearchBoard from './src/views/search-board';
 import { UtilityThemeProvider } from 'react-native-design-utility';
 import { theme } from './src/theme';
+import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 
 
 // type SectionProps = PropsWithChildren<{
@@ -51,13 +52,21 @@ import { theme } from './src/theme';
 //   );
 // }
 
+const client = new ApolloClient({
+  uri: 'https://countries.trevorblades.com',
+  cache: new InMemoryCache()
+});
+
+
 function App(): JSX.Element {
 
   return (
     <SafeAreaView style={{ flex: 1}}>
-       <UtilityThemeProvider theme={theme}>
-        <SearchBoard />
-       </UtilityThemeProvider>
+      <ApolloProvider client={client}>
+        <UtilityThemeProvider theme={theme}>
+          <SearchBoard />
+        </UtilityThemeProvider>
+       </ApolloProvider>
     </SafeAreaView>
   );
 }
