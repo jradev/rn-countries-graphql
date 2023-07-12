@@ -1,4 +1,4 @@
-A mobile application using react native framework, countries graphql & flatlist
+A mobile application using react native framework CLI, Implement countries graphql & rn simple flatlist
 
 
 <p float="left">
