@@ -10,8 +10,11 @@
     "test": "jest"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.16",
+    "graphql": "^16.7.1",
     "react": "18.2.0",
-    "react-native": "0.71.7"
+    "react-native": "0.71.7",
+    "react-native-design-utility": "https://github.com/jradev/react-native-design-utility"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
