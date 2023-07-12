@@ -25,7 +25,7 @@ import { gql, useQuery } from '@apollo/client';
 import { IMAGES } from '../../utils/images';
 import { theme } from '../../theme';
 import { client } from '../../../App';
-import { GET_COUNTRIES, SEARCH_COUNTRY } from '../../queries';
+import { GET_COUNTRIES } from '../../queries';
 
 
 export default function SearchBoard(): JSX.Element {
@@ -141,7 +141,7 @@ export default function SearchBoard(): JSX.Element {
           <TouchableOpacity onPress={() => onPressCountry(item)}>
             <Box h={35} key={i} dir="row" style={{
               borderBottomWidth: StyleSheet.hairlineWidth
-            }} my="xs">
+            }} my="xs" px="xs">
               <Text>{item.emoji}</Text>
               <Text>{item.name}</Text>
             </Box>
