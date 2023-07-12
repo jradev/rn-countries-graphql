@@ -25,7 +25,7 @@ import { gql, useQuery } from '@apollo/client';
 import { IMAGES } from '../../utils/images';
 import { theme } from '../../theme';
 import { client } from '../../../App';
-import { GET_COUNTRIES } from '../../queries';
+import { GET_COUNTRIES, SEARCH_COUNTRY } from '../../queries';
 
 
 export default function SearchBoard(): JSX.Element {
